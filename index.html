@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <style type="text/css">
+      #cabecalho {
+        width:  57%;
+        margin: auto;
+      }
+      .titulo {
+        color:       black;
+        text-align:  center;
+        font-size:   17px;
+        font-family: Arial,Helvetica,sans-serif;
+      }
+      .topico {
+        color:       black;
+        text-align:  left;
+        font-size:   17px;
+        font-weight: bold;
+        font-family: Arial,Helvetica,sans-serif;
+      }
+      .mensagem {
+        color:           black;
+        text-align:      center;
+        font-size:       17px;
+        font-family:     Arial,Helvetica,sans-serif;
+        text-decoration: underline;
+      }
+      #dadosPessoais {
+        font-family:  Arial,Helvetica,sans-serif;
+        border-style: solid;
+        border-width: 1px;
+        width:        57%;
+        margin:       auto;
+      }
+      .label {
+        color:           black;
+        text-align:      right;
+        font-size:       17px;
+        font-family:     Arial,Helvetica,sans-serif;
+      }
+      .campo {
+        color:       black;
+        font-size:   17px;
+        font-family: Arial,Helvetica,sans-serif;
+        width:       100%;
+      }
+      .perguntas {
+        font-family:  Arial,Helvetica,sans-serif;
+        border-style: solid;
+        border-width: 1px;
+        width:        57%;
+        margin:       auto;
+      }
+      .selecao {
+        text-align:      center;
+      }
+      #rodape {
+        color:           black;
+        text-align:      center;
+        font-size:       17px;
+        font-family:     Arial,Helvetica,sans-serif;
+        font-weight:     bold;
+        text-decoration: underline;
+        width:           57%;
+        margin:          auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="cabecalho">
+      <table>
+        <tr>
+          <td class="titulo"><img src="imagens/logoufv.jpg" alt="logotipo ufv" height="206" width="254" /></td>
+        </tr>
+        <tr>
+          <td class="titulo">Universidade Federal de Viçosa - UFV</td>
+        </tr>
+        <tr>
+          <td class="titulo">Departamento de Biologia Animal - DBA</td>
+        </tr>
+        <tr>
+          <td class="titulo">Programa de P&oacute;s-gradua&ccedil;&atilde;o em Biologia Animal</td>
+        </tr>
+        <tr>
+          <td class="topico">QUESTION&Aacute;RIO</td>
+        </tr>
+        <tr>
+          <td class="mensagem">Solicitamos que, por favor, as perguntas sejam respondidas com base em experi&ecirc;ncias pr&oacute;prias.</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="dadosPessoais">
+      <table>
+        <tr>
+          <td class="label">Nome:</td>
+          <td><input type="text" name="nome" class="campo" /></td>
+        </tr>
+        <tr>
+          <td class="label">Idade:</td>
+          <td><input type="text" name="idade" class="campo" /></td>
+        </tr>
+        <tr>
+          <td class="label">Profiss&atilde;o:</td>
+          <td><input type="text" name="profissao" class="campo" /></td>
+        </tr>
+        <tr>
+          <td class="label">Cidade:</td>
+          <td><input type="text" name="cidade" class="campo" /></td>
+        </tr>
+        <tr>
+          <td class="label">H&aacute; quanto tempo mora ou trabalha na cidade:</td>
+          <td><input type="text" name="tempo" class="campo" /></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="perguntas">
+      <p>1) Nos &uacute;ltimos 5 cinco anos, voc&ecirc; observou saguis (micos ou souim) em algum local no munic&iacute;pio ?
+        <form>
+          <input type="radio" name="questao1" value="sim" /> Sim
+          <input type="radio" name="questao1" value="nao" /> N&atilde;o
+        </form>
+        <br />
+        Caso sua resposta tenha sido “N&Atilde;O”, v&aacute direto &agrave; pergunta 8.
+      </p>
+    </div>
+
+    <div class="perguntas">
+      <p>2) Em que local do munic&iacutepio voc&ecirc; viu saguis (micos ou souim)?
+        <form>
+          <input type="checkbox" name="questao2" value="matapreservada"    /> &Aacuterea de mata preservada      <br />
+          <input type="checkbox" name="questao2" value="propriedaderural"  /> Propriedade rural                  <br />
+          <input type="checkbox" name="questao2" value="proximoareaurbana" /> Pr&oacuteximo a &aacute;rea urbana <br />
+          <input type="checkbox" name="questao2" value="cativeiro"         /> Em cativeiro                       <br />
+          <input type="checkbox" name="questao2" value="parquesreservas"   /> Parques ou reservas                <br />
+          <input type="checkbox" name="questao2" value="outrolocal"        /> Em outro local <input type="text" name="questao2descricao" /> <br />
+        </form>
+      </p>
+    </div>
+
+    <div class="perguntas">
+      <p>3) Normalmente quantos animais voc&ecirc; v&ecirc;?
+        <form>
+          <input type="radio" name="questao3" value="atequatro"  /> At&eacute; quatro animais <br />
+          <input type="radio" name="questao3" value="cincoadez"  /> Entre cinco e dez animais <br />
+          <input type="radio" name="questao3" value="acimadedez" /> Acima de dez animais      <br />
+        </form>
+      </p>
+    </div>
+
+    <div class="perguntas">
+      <p>4) A quantidade de saguis (micos ou souim) no munic&iacute;pio mudou nos &uacute;ltimos anos?
+        <form>
+          <input type="radio" name="questao4" value="diminuiu"     /> Sim, a quantidade de animais diminuiu                <br />
+          <input type="radio" name="questao4" value="aumentou"     /> Sim, a quantidade de animais aumentou                <br />
+          <input type="radio" name="questao4" value="igual"        /> N&atilde;o, a quantidade de animais n&atilde;o mudou <br />
+          <input type="radio" name="questao4" value="desconhecido" /> N&atilde;o sei                                       <br />
+        </form>
+      </p>
+    </div>
+
+    <div class="perguntas">
+      <p>5) Os saguis (micos ou souim) costumam se aproximar das pessoas?
+        <form>
+          <input type="radio" name="questao5" value="sim"    /> Sim           <br />
+          <input type="radio" name="questao5" value="nao"    /> N&atilde;o    <br />
+          <input type="radio" name="questao5" value="naosei" /> N&atilde; sei <br />
+        </form>
+      </p>
+    </div>
+
+    <div class="perguntas">
+      <p>6) De acordo com figuras abaixo, indique com qual ou quais figuras os saguis (micos ou souim) que voc&ecirc; observou mais se parecem.
+        <form>
+          <table>
+            <tr>
+              <td width="100" class="selecao"><input type="checkbox" name="questao6" value="matapreservada"    /> A </td>
+              <td width="100" class="selecao"><input type="checkbox" name="questao6" value="propriedaderural"  /> B </td>
+              <td width="100" class="selecao"><input type="checkbox" name="questao6" value="proximoareaurbana" /> C </td>
+              <td width="100" class="selecao"><input type="checkbox" name="questao6" value="cativeiro"         /> D </td>
+              <td width="100" class="selecao"><input type="checkbox" name="questao6" value="parquesreservas"   /> E </td>
+              <td width="100" class="selecao"><input type="checkbox" name="questao6" value="outrolocal"        /> F </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+              <td colspan="6"><img src="imagens/animais.jpg" alt="animais em estudo" /> </td>
+            </tr>
+          </table>
+        </form>
+      </p>
+    </div>
+
+    <div class="perguntas">
+      <p>7) Algumas pessoas em Minas Gerais tem encontrado saguis (micos ou souim) que parecem ser cruzamentos  entre as diferentes esp&eacute;cies demonstradas acima. Voc&ecirc; j&aacute; observou isso no seu munic&iacute;pio? <br />(Se poss&iacute;vel, diga com que combina&ccedil;&atilde;o de figuras os saguis h&iacute;bridos da sua cidade mais se parecem). <input type="text" name="questao7descricao" />
+        <form>
+          <input type="radio" name="questao7" value="sim"    /> Sim            <br />
+          <input type="radio" name="questao7" value="nao"    /> N&atilde;o     <br />
+          <input type="radio" name="questao7" value="naosei" /> N&atilde;o sei <br />
+        </form>
+      </p>
+    </div>
+
+    <div class="perguntas">
+      <p>8) Você j&aacute; ouviu falar da exist&ecirc;ncia de saguis (micos ou souim) em algum outro local do munic&iacute;pio?
+        <form>
+          <input type="radio" name="questao8" value="nao"    /> N&atilde;o    <br />
+          <input type="radio" name="questao8" value="sim"    /> Sim. Onde? <input type="text" name="questao8descricao" /> <br />
+        </form>
+      </p>
+    </div>
+
+  <body>
+    <div id="rodape">
+      <table>
+        <tr>
+          <td class="mensagem2">Solicitamos que, se poss&iacute;vel, nos envie alguma foto dos saguis (micos ou souim) que voc&ecirc; costuma observar no munic&iacute;pio.</td>
+        </tr>
+      </table>
+    </div>
+
+
+  </body>
+
+</html>
